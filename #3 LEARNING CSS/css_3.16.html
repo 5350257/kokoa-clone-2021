@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <title>#3.16 Pseudo Selectors part 2</title>
+        <!-- 주석 내용 -->
+        <style>
+          body{
+              height: 1000vh;
+              margin : 20px;
+
+          }
+          span{
+            margin : 0 10px;
+            padding : 5px;
+            border-radius: 10px;
+            background-color: yellowgreen;
+            color: white;
+           
+          }
+    
+          div > span{
+            text-decoration: underline;
+          }
+          
+         /*바로 밑에 있지 않아도 되는 형제들*/
+          p ~ span{
+            text-decoration: underline;
+          }
+          input{
+            border:1px solid wheat;
+          }
+          input:required{
+            border: 1px solid tomato;
+          }
+          input[placeholder~="name"]{
+            background-color: pink;
+          }
+        </style>
+    </head>
+    <body>
+      <div>
+      <form>
+        <input type = "text" placeholder="First name"/>
+        <input type = "text" placeholder="Last name"/>
+        <input type = "password" placeholder="password"/>
+
+      </form>
+    </div>
+    </body>
+</html>

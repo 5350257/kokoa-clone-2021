@@ -1,0 +1,40 @@
+### Block의 특징(margin, padding, border)
+
+block에서 inline으로 inline에서 block으로 바꾸는게 가능할까? → 가능하다
+
+이렇게 하는 걸 display 속성이라고 한다.
+
+기본적으로 span의 display 속성은 inline이다. 이걸 block으로 바꿔주면 span도 block이 된다.
+
+그렇다면 div를 inline으로 바꾸면 어떤 일이 일어날까? → div가 사라진다.
+
+이유는 어떤 요소가 inline이면 그 요소는 높이와 너비를 가질 수 없기 때문이다.
+
+높이와 너비가 없고 내용도 없기 때문에 사라져 보인다. 내용이 있으면 그 내용만큼의 크기를 가지고 보여지게 된다.
+
+inline은 높이와 너비가 없고, block은 높이와 너비가 있다.
+
+block의 엄청난 특징 3가지는 다음과 같다.
+
+브라우저는 요소들에게 원치 않아도 많은 style 속성을 준다.
+
+user agent stylesheet : 브라우저가 기본적으로 준 style 속성
+
+1. **margin : box의 border의 바깥에 있는 공간**
+2. padding
+3. border
+
+#some tips
+
+margin-top: a;
+margin-right: b;
+margin-bottom: c;
+margin-left: d;
+
+를 합쳐서
+
+margin: a b c d; 하셔도 순서대로 적용 됩니다.
+상하, 좌우 혹은 상, 좌우, 하 등 여러가지 방식이 더 있는데
+자세한 건 니꼬쌤말대로 MDN 참고하시면 됩니다 !
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/margin

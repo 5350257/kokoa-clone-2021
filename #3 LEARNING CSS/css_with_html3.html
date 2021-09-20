@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <title>#3.9~ layouts</title>
+        <!-- 주석 내용 -->
+        <style>
+          body{
+              margin : 0px;
+          }
+        .btn{
+            border-radius: 5px;
+            padding : 5px 10px;
+        }
+        .teal{
+              background-color: teal;
+              /* padding :20px;
+              margin : 30px; */
+            }
+        .tomato{
+                background-color: tomato;
+                color: whitesmoke;
+            }
+        
+            /* 
+            .tomato = class (class는 띄워쓰기로 여러개 가질 수 있다.)
+            #tomato = id 
+            id는 제약이 많아서 class를 많이 쓴다.
+            */
+        </style>
+    </head>
+    <body>
+        <span>hi</span> 
+        <!-- inline 특성을 가지고 있어도 border가 적용됨 -->
+        <span>hi</span> 
+        <!--inline 는 위 아래로 margin을 가질 수 없다.-->
+        <br><br>
+        <span class = "btn tomato">hello</span>
+        <span class = "btn teal">hello</span>
+        <span class = "btn tomato">hello</span>
+        <span class = "btn teal">hello</span>
+        <span class = "btn tomato">hello</span>
+        <span class = "btn teal">hello</span>
+       <!--id 와는 다르게 class는 중복이 가능하다.-->
+    </body>
+</html>

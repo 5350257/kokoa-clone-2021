@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <style>
+        html{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black; 
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width : 800px;
+            height: 800px;
+            background-color :rgb(101, 194, 197);
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 50px;
+            animation: turn 0.9s ease-in-out infinite;
+            
+        }
+        div{
+            width: 15px;
+            background-color: white;
+        }
+        .dot{
+            border-radius: 50%;
+            
+            height: 15px;
+            margin: 18px;
+        }
+        .box{
+            margin : 4px 4px 0 4px;
+            animation: act 0.9s ease-in-out infinite;
+            height: 60px;
+            
+        }
+        #box1{
+            
+        }
+        #box2{
+            
+            animation-delay: 0.1s;
+        }
+        #box3{
+            
+            animation-delay: 0.2s;
+        }
+        #box4{
+            
+            animation-delay: 0.3s;
+        }
+        #box5{
+            
+            animation-delay: 0.4s;
+        }
+
+        @keyframes turn{
+            0%{
+                transform: rotateZ(0);
+            }60%{
+                transform: rotateZ(180deg);
+                
+            }100%{
+                transform: rotateZ(180deg);
+            }
+        }
+        @keyframes act{
+            0%{
+                
+                transform:scaleY(1);
+            }25%{
+                transform:scaleY(2);
+            }50%{
+                transform:scaleY(1);
+            }100%{
+                transform:scaleY(1);
+                
+            }
+            
+        }
+        @keyframes hold{
+            from{
+                transform:scaleY(1);
+            }to{
+                transform:scaleY(1);
+            }
+        }
+       
+    </style>
+  </head>
+  <body>
+    <form>
+        <div class = "dot"></div>
+        <div class = "dot"></div>
+        <div class = "dot"></div>   
+    </form>
+    <div class = "box" id ="box1"></div>
+    <div class = "box" id ="box2"></div>
+    <div class = "box" id ="box3"></div>
+    <div class = "box" id ="box4"></div>
+    <div class = "box" id ="box5"></div>
+  </body>
+</html>

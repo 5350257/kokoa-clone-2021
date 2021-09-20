@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <title>#3.11 Flexbox Part 2</title>
+        <!-- 주석 내용 -->
+        <style>
+          body{
+              background-color: wheat;
+              height: 100vh; /*vh  = viewpoint height*/
+              margin : 30px;
+              display : flex;
+              justify-content:center;
+              flex-direction: column;
+              align-items: center;
+              /* body is in control divs */
+              /* 모든 명령은 body에 쓴다 */
+          
+          }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid black;
+            width : 50px;
+           height: 50px;
+           font-size: 50px;
+           color :hotpink;
+            
+        }
+        #one{
+            background-color: crimson;
+        } #two{
+            background-color: yellow;
+        }#three{
+            background-color: blue;
+        }
+        </style>
+    </head>
+    <body>
+        <div id = "one">1</div>
+        <div id = "two">2</div>
+        <div id = "three">3</div>
+    </body>
+</html>

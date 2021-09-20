@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <style>
+        html{
+            background-color: whitesmoke;
+        }body{
+            height: 100vh;
+            display : flex;
+            justify-content:center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        h1{
+            width: 100%;
+            display : flex;
+            justify-content:center;
+            
+        }
+        div{
+            margin : 10px;
+            display: flex;
+            justify-content: center;
+            height: 360px;
+            width: 200px;
+            border: 10px solid white;
+            
+            position: relative;
+        }
+        div > div{
+            background-color: white;
+            height: 100px;
+            width: 200px;
+            border: 10px solid white;
+            position: absolute;
+            top : 20px;
+            flex-direction: column;
+            
+            
+        }
+        span{
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        p{
+            font-weight: bold;
+        }
+        div:nth-child(2){
+            background-color: tomato;  
+        }
+        div:nth-child(3){
+            background-color: teal;  
+        }
+        div:nth-child(4){
+            background-color:burlywood;  
+        }
+        div:nth-child(5){
+            background-color: thistle;  
+        }
+    </style>
+  </head>
+  <body>
+      <h1><b>The Best Colors</b></h1>
+      <div>
+          <div>
+            <span>Tomato</span>
+            <p>#FF6347</p>
+              
+          </div>
+      </div>
+      <div>
+        <div>
+            <span>Teal</span>
+            <p>#008080</p>
+              
+          </div>
+    </div>
+    <div>
+        <div>
+            <span>Burlywood</span>
+            <p>#DEB887</p>
+              
+          </div>
+    </div>
+    <div>
+        <div>
+            <span>Thistle</span>
+            <p>#D7BFD7</p>
+              
+          </div>
+    </div>
+  </body>
+</html>

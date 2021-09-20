@@ -1,0 +1,31 @@
+tag들 정리한 내용
+  <head>
+     페이지에 관한 환경설정을 해주는 곳
+     그 중 하나가 타이틀임
+     <title>Home - MY first Website.</title> 
+    </head>에 속해있는 내용들은 사이트에 안보여진다.
+    보여질 내용들은 모두 body에 적어야 한다.
+
+
+<h1> title </h1> h1 = header 1이란 뜻 1부터 6까지 있다.
+ <ul>
+ <li>item name<li>
+ <li>item name<li>
+ </ul> meaning unordered list
+
+<ol>
+<li>item name<li>
+<li>item name<li>
+
+</ol> meaning ordered list
+
+<li><li> meaning list item
+ul과 ol 사이에서 1234, ... 으로 정렬 되는 값들이다.
+
+<a></a> meaning anchor link의 뜻을 가지고 있다.
+= 다른 웹사이트로 이동하는 역할.
+
+attribute(속성) tag에 추가하는 부가적인 정보들
+attribute 마다 사용할 수 있는 tag가 다르다.
+
+only images can have src attribute.

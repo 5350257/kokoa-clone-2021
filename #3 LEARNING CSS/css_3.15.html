@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <title>#3.15 Combinatiors</title>
+        <!-- 주석 내용 -->
+        <style>
+          body{
+              height: 1000vh;
+              margin : 20px;
+
+          }
+          span{
+            margin : 0 10px;
+            padding : 5px;
+            border-radius: 10px;
+            background-color: yellowgreen;
+            color: white;
+           
+          }
+        /*부모 자식
+          부모 안에 있는 span에만 적용이 가능
+        */
+         p span{
+            color :black;
+            
+          }
+          /*직계자식만*/
+          div > span{
+            text-decoration: underline;
+          }
+          
+          /*바로 밑에 있는 형제 자식에게만*/
+          p + span{
+            text-decoration: underline;
+          }
+        </style>
+    </head>
+    <body>
+      <div>
+      <span>hello</span>
+      <p>
+        sdksdkda asfampekmsdm msdlkmfwalkmme  oewqofmdsaas. adsad
+        <span>inside</span>
+      </p>
+    </div>
+    </body>
+</html>

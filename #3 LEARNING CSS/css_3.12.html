@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <title>#3.12 Fixed</title>
+        <!-- 주석 내용 -->
+        <style>
+          body{
+              height: 1000vh;
+              margin : 20px;
+
+          }
+          div{
+              
+              /* 
+              position: fixed;를 하면 화면에 고정된다.
+              고정되는 위치는 초기 위치
+              */
+              width : 300px;
+              height: 300px;
+              color: white;
+              background-color: teal;
+          }
+           .different{
+               top : 5px;
+               left : 200px;
+               /* top left 등의 값을 하나만 바꿔주어도 다른 레이어로 이동한다. */
+               
+               background-color: wheat;
+               width: 350px;
+            }   
+            #green{
+                position: fixed;
+                background-color: green;
+                opacity: 0.2;
+            }
+        </style>
+    </head>
+    <body>
+      <div id = "green"></div>
+      <div class ="different"></div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>#4.3 Animations part 1</title>
+     <style>
+
+         @keyframes superSexyCoinFlip{
+            from{
+                transform:rotateX(0);
+            }to{
+                transform: rotateX(360deg) translateX(100px);
+            }
+         }
+       img{
+           border : 5px solid goldenrod;
+           border-radius: 50%;
+           animation: superSexyCoinFlip 3s linear infinite;
+       }
+     
+     </style>
+    </head>
+    <body>
+        <img src = "imgs/찌리리문.png"/>
+        <span>문!하하하하하하하!</span>
+    </body>
+</html>

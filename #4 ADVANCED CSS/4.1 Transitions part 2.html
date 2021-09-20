@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>#4.1 Transitions part 2</title>
+     <style>
+       img{
+           border : 5px solid goldenrod;
+           border-radius: 50%; 
+           /* 50% == 원이 됨.*/
+           
+           transition: all 2s ease-in;
+           
+           /*박스의 원래 위치를 변화시키진 않는다.*/
+       }
+       img:hover{
+           
+           transform: rotate3d(1,2.0,3.0,10deg);
+          
+       }
+     </style>
+    </head>
+    <body>
+        <img src = "imgs/찌리리문.png"/>
+        <span>문!하하하하하하하!</span>
+    </body>
+</html>

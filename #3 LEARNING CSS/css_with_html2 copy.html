@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <title>#3.6~ How to Add CSS to HTML</title>
+        <link href = "styles.css" rel="stylesheet"/>
+        <!-- 주석 내용 -->
+        <style>
+            /*
+                *{} == 모든 요소에 값을 적용함.
+            */
+            
+            *{
+
+                border : 5px solid black;
+            }
+            html{
+                background-color:blueviolet;
+            }
+            h1 {
+               color :rgb(17, 45, 202);
+               font-style:italic;
+               font-weight: 1111;
+               font-size: 33px;
+            }
+            address{
+                text-align: center;
+                color:rgb(255, 255, 255);
+            }
+            div {
+               padding : 12px;
+              
+
+               
+            }#first {
+                background-color : whitesmoke;
+                height: 150px;
+               width : 150px;
+
+            }#second{
+                background-color : teal;
+                height: 100px;
+               width : 100px;
+            }#third {
+                background-color: wheat;
+                height: 50px;
+               width : 50px;
+            }#fourth{
+                background-color: yellow;
+                height: 25px;
+               width : 25px;
+            }
+            span{
+               
+                background-color: turquoise;
+            }
+            img{
+                display: block;
+            }
+            body{
+                margin: 0;
+                padding : 20px 10px;
+                background-color:salmon;
+            }
+        </style>
+    </head>
+    <body>
+        <span>hello</span> <!-- inlined 특성을 가지고 있어도 border가 적용됨 -->
+      <div id = "first">
+          <div id = "second">
+              <div id = "third">
+                  <div id = "fourth"></div>
+              </div>
+          </div>
+      </div>
+      
+    </body>
+</html>

@@ -1,0 +1,14 @@
+position : fixed;
+초기 위치에 고정시켜 준다.
+다른 레이어 상에 자리잡는다.
+
+top, right, bottom, left 등과 함께 사용시,
+margin과 초기 위치 등이 무시되고 명령한 위치에 자리잡음
+
+#green과 #different를 그냥 만들었을 때 두 box가 위 아래로 겹침 => 서로 동일 레이어에 있기 때문에 박스가 순서대로 쌓임
+#green를 position:fixed 시키고 #different를 그냥 만들었을 때 겹침=>서로
+새로운 레이어에 위치하기 때문에 둘다 첫번째 위치에 자리잡음
+(#different 박스도 뒷쪽 레이어에서 첫번째 박스)
+
+
+

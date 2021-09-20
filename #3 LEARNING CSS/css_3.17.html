@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>#3.17 States</title>
+
+     <style>
+         /* button:active{
+             background-color:chocolate;
+         } */
+         form{
+             border : 5px solid salmon;
+             display: flex;
+             flex-direction: column;
+             padding : 20px;
+         }
+         form:focus-within{
+             border-color: seagreen;
+         }/* 자식 개체가 focus가 되면 form의 형태를 바꾼다. */
+         form:hover input{
+            background-color: sienna;
+         }
+         form:hover input:focus{
+             background-color: silver;
+         }
+         button:hover{
+             background-color:chocolate;
+         }
+         input:focus{
+             background-color: cornflowerblue;
+         }
+         a:visited{
+             color: gold;
+         }
+         a:hover{
+             color : teal;
+
+         }
+         a:focus{
+             color:grey;
+         }
+     </style>
+    </head>
+    <body>
+        <form>
+            <input type = "text" name = "" id =""/>
+            <input type = "text" name = "" id =""/>
+            <input type = "text" name = "" id =""/>
+        </form>
+        <a href = "https://www.naver.com">Go to naver.com!</a>
+        <div>
+            <button>Hello</button>
+            <input type = "text"/>
+            <input type = "text"/>
+        </div>
+    </body>
+</html>
